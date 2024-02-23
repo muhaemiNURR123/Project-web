@@ -1,0 +1,92 @@
+:root {
+  --font-colour: #424242;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Ubuntu, sans-serif, Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* warna matahari */
+  --bg-colour: #ededed;
+  --frame-colour: #fff;
+  --background-hover: rgba(255, 152, 0, 0.7);
+  --button-border: rgba(0,0,0,.2);
+  --button-border-hover: rgba(0,0,0,1);
+  --icon-wght: 300;
+  --icon-opsz: 20;
+  --icon-grad: 0;
+  --icon-size: 20px;
+}
+:root [data-theme=dark] {
+  --icon-grad: -25;
+}
+
+[data-theme=dark] {
+  --font-colour: white;
+  --bg-colour: #161625;
+  --frame-colour: #0b0b17;
+  --background-hover: rgba(0, 123, 255, 0.7);
+  --button-border: rgba(255,255,255,.2);
+  --button-border-hover: rgba(255,255,255,1);
+}
+
+/* ubah ukuran background matahari dan Bulan */
+.dark-mode-switch {
+  display: flex;
+  transition: transform 0.2s ease-out;
+  border-radius: 2em;
+  overflow: hidden;
+  width: 1.5em;
+  height: 1.5em;
+  transform-origin: center;
+}
+.dark-mode-switch:hover, .dark-mode-switch:focus {
+  transform: scale(1.2);
+}
+.dark-mode-switch input.material-symbols-rounded[type=checkbox] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: flex;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  --icon-wght: 300;
+  --icon-opsz: 24;
+  --icon-size: 3em;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+.dark-mode-switch input.material-symbols-rounded[type=checkbox]::after {
+  content: "";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* mengubah waktu pergantian warna icon */
+  transition: background-color 10s;
+  background-color: var(--background-hover);
+}
+.dark-mode-switch input.material-symbols-rounded[type=checkbox]:checked:after {
+  content: "dark_mode";
+  color: white;
+}
+.dark-mode-switch input.material-symbols-rounded[type=checkbox]:not(:checked):after {
+  content: "light_mode";
+}
+.dark-mode-switch label {
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.hide {
+  visibility: hidden;
+}
