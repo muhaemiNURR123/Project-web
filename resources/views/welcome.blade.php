@@ -8,7 +8,7 @@
                 <div class="row py-6">
                     <div class="col ">
                         <div class="py-9" style="margin-bottom: 1.7em;">
-                            <h4 class="Heading-1" style="font-size: 2.25rem; color: rgb(255, 255, 255);">Sebuah mesin IT yang memiliki kemampuan teknologi
+                            <h4 class="Heading-1" style="font-size: 2.25rem; color: rgb(199, 49, 49);">Sebuah mesin IT yang memiliki kemampuan teknologi
                                 <span style="color: hsl(62, 80%, 46%)">Big Data</span>
                             </h4>
                             <h4 class="Heading-1" style="font-size: 50%%; color: rgb(255, 255, 255);">yang melakukan proses analisis dan pemetaan politik
