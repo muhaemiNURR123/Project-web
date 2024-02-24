@@ -52,13 +52,28 @@ py-1 {
   --bs-dropdown-padding-x: 1;
   --bs-dropdown-spacer: 1.625rem;
   --bs-dropdown-font-size: 0.875rem;
-  --bs-dropdown-color: rgba(242, 31, 31, 0.64);
+  --bs-dropdown-color: rgba(31, 242, 214, 0.64);
   --bs-dropdown-bg: rgba(31,192,242,0.64);
   --bs-dropdown-border-color: transparent;
-  --bs-dropdown-border-radius: 0.5rem;
-  --bs-dropdown-border-width: 0;
   --bs-dropdown-inner-border-radius: 0.375rem;
   --bs-dropdown-divider-bg: transparent;
+}
+
+.dropdown.dropdown-hover:hover>.dropdown-menu, .dropdown .dropdown-menu.show {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.dropdown.dropdown-hover .dropdown-menu, .dropdown .dropdown-menu {
+
+  position: absolute;
+  opacity: 0;
+  margin-top: 2.8125rem !important;
+  will-change: transform, box-shadow;
+  width: 100px;
+  height: 100px;
 }
 
 /* Untuk Text di Dropdown */
@@ -78,9 +93,10 @@ py-1 {
     font-size: 0.875rem;
   }
 
+  /*untuk text bawah datamining dll*/
   .dropdown-item {
     font-weight: 400;
-    color: #000;
+    color: #ff0000;
     text-align: inherit;
     white-space: nowrap;
   }
@@ -92,5 +108,9 @@ py-1 {
 
   /* Untuk Text di background imange */ 
   .py-9 {
-    padding-top: 15rem !important;
+    padding-top: 15rem !;
   }
+
+.opacity-6 {
+    opacity: 0px;
+}
