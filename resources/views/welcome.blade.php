@@ -1,18 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div class="min-vh-90 backgroundimage">
         <div class="vh-100 bg-gradient-dark opacity-6">
             <div class="container">
                 <div class="row py-6">
                     <div class="col ">
                         <div class="py-9" style="margin-bottom: 1.7em;">
-                            <h4 class="Heading-1" style="font-size: 2.25rem; color: rgb(199, 49, 49);">Sebuah mesin IT yang memiliki kemampuan teknologi
+                            <h4 class="Heading-1" style="font-size: 2.25rem; color: rgb(199, 49, 49);">Sebuah mesin IT yang
+                                memiliki kemampuan teknologi
                                 <span style="color: hsl(62, 80%, 46%)">Big Data</span>
                             </h4>
-                            <h4 class="Heading-1" style="font-size: 50%%; color: rgb(255, 255, 255);">yang melakukan proses analisis dan pemetaan politik
-                            dari berbagai sumber data dan internet</h4>
+                            <h4 class="Heading-1" style="font-size: 50%%; color: rgb(255, 255, 255);">yang melakukan proses
+                                analisis dan pemetaan politik
+                                dari berbagai sumber data dan internet</h4>
                         </div>
                     </div>
                 </div>
@@ -26,126 +27,51 @@
             </div>
         </div>
     </div>
-    <footer class="footer pt-5 mt-5">
-        <div class="container">
-            <div class=" row">
-                <div class="col-md-3 mb-4 ms-auto">
-                    <div>
-                        <img src="./assets/img/logo-ct-dark.png" class="mb-3 footer-logo" alt="main_logo">
-                        </a>
-                        <h6 class="font-weight-bolder mb-4">Jayabaya Engine X</h6>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-6 mb-4">
-                    <div>
-                        <h6 class="text-sm">Company</h6>
-                        <ul class="flex-column ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    About Us
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Freebies
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Premium Tools
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-6 mb-4">
-                    <div>
-                        <h6 class="text-sm">Resources</h6>
-                        <ul class="flex-column ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Illustrations
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Bits & Snippets
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Affiliate Program
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-6 mb-4">
-                    <div>
-                        <h6 class="text-sm">Help & Support</h6>
-                        <ul class="flex-column ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                </svg>
+                <img src="{{ asset('images/logo_jayabaya.png') }}" width="90px" height="75px" />
+            </a>
+            <p class="text-center">© 2022</p>
+        </div>
+        <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+        </div>
 
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Knowledge Center
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Custom Development
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Sponsorships
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
-                    <div>
-                        <h6 class="text-sm">Legal</h6>
-                        <ul class="flex-column ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Terms & Conditions
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" target="_blank">
-                                    Licenses (EULA)
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="text-center">
-                        <p class="text-dark my-4 text-sm font-weight-normal">
-                            All rights reserved. Copyright ©
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> Jayabaya <a href="https://www.creative-tim.com" target="_blank">Engine
-                                X</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+        </div>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </div>
         </div>
     </footer>
 @endsection
