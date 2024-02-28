@@ -24,6 +24,12 @@
     @vite(['resources/css/material-kit.css', 'resources/js/material-kit.js'])
     @vite(['resources/css/misa-custom.css', 'resources/js/custom.js'])
     @vite(['resources/css/style.css'])
+    <style>
+        a.biru:hover{
+            color:cadetblue;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,15 +55,15 @@
             <img src="{{ asset('images/logo_1.png') }}" width="95px" height="65px" />
             <img src="{{ asset('images/logo_tulisan.png') }}" width="100px" height="70px" />
             <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0" id="navigation">
-                <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100 d-flex justify-content-end ">
+                <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100 d-flex justify-content-end">
                     <li class="nav-item dropdown dropdown-hover mx-3">
-                        <a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+                        <a class="nav-link ps-2 d-flex cursor-pointer align-items-center biru"
                             id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
                             Fitur
                             <i class="fa fa-caret-down" style="font-size: 15px; padding: 8px"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
-                            aria-labelledby="dropdownMenuDocs">
+                        aria-labelledby="dropdownMenuDocs dropdown-modif" style="width: 1740%; margin-left: -655px;  top: 30px;">
                             <div class="d-none d-lg-block">
                                 <li class="nav-item ">
                                     <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
@@ -131,13 +137,13 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown dropdown-hover mx-2">
-                        <a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+                        <a class="nav-link ps-2 d-flex cursor-pointer align-items-center biru"
                             id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
                             Company
                             <i class="fa fa-caret-down" style="font-size: 15px; padding: 8px"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
-                            aria-labelledby="dropdownMenuDocs">
+                            aria-labelledby="dropdownMenuDocs dropdown-modif" style="width: 1200%; margin-left: -750px; top: 30px;">
                             <div class="d-none d-lg-block">
                                 <li class="nav-item ">
                                     <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
@@ -196,13 +202,13 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown dropdown-hover mx-2">
-                        <a class="nav-link dropdown ps-2 d-flex  align-items-center" id="dropdownMenuDocs"
+                        <a class="nav-link dropdown ps-2 d-flex  align-items-center biru" id="dropdownMenuDocs"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Learning Center
                             <i class="fa fa-caret-down" style="font-size: 15px; padding: 8px"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
-                            aria-labelledby="dropdownMenuDocs">
+                            aria-labelledby="dropdownMenuDocs dropdown-modif" style="width: 860%; margin-left: -865px; top: 30px;">
                             <div class="d-none d-lg-block">
                                 <li class="nav-item ">
                                     <a class="dropdown-item py-2 ps-3 border-radius-md"

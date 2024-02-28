@@ -7,20 +7,17 @@
                 <div class="row py-6">
                     <div class="col ">
                         <div class="py-9" style="margin-bottom: 1.7em;">
-                            <h4 class="Heading-1" style="font-size: 2.25rem; color: rgb(199, 49, 49);">Sebuah mesin IT yang
-                                memiliki kemampuan teknologi
+                            <h4 class="Heading-1" style="font-size: 2rem; color: rgb(255, 255, 255); width: 75%">Sebuah Mesin IT yang memiliki kemampuan teknologi
                                 <span style="color: hsl(62, 80%, 46%)">Big Data</span>
+                                yang proses analisis dan 
+                                <span style="color: hsl(62, 80%, 46%)">pemetaan politik dari berbagai sumber data di internet.</span>
                             </h4>
-                            <h4 class="Heading-1" style="font-size: 50%%; color: rgb(255, 255, 255);">yang melakukan proses
-                                analisis dan pemetaan politik
-                                dari berbagai sumber data dan internet</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
         <div class="container">
             <div class="section text-center">
                 <h2 class="title">Your main section here</h2>
@@ -68,9 +65,9 @@
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
             </ul>
         </div>
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        <div class="text-center p-4" style="background-color: rgba(146, 110, 110, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold">Jayabaya Engine X</a>
           </div>
         </div>
     </footer>
