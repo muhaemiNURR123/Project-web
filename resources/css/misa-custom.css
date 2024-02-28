@@ -51,19 +51,6 @@ py-1 {
   transform: scale(1) !important;
 }
 
-.dropdown-menu-translate {
-  display: block;
-  position: absolute;
-  opacity: 0;
-  transform-origin: 0 0;
-  inset: 0px auto auto 0px;
-  margin-top: 2.8125rem !important;
-  pointer-events: none;
-  transform: scale(0.95) !important;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  will-change: transform, box-shadow;
-}
 
 /* Untuk Text di Dropdown */
 .text-dark {
@@ -96,8 +83,10 @@ py-1 {
 
   /* Untuk Text di background imange */ 
   .py-9 {
-    padding-top: 13rem !important;
+    padding-top: 13rem ;
     width: 75%;
+    margin-top: 3rem;
+    margin-left: -5rem;
   }
 
   .opacity-6 {

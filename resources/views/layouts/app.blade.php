@@ -233,8 +233,7 @@
                                         href="javascript:;">
                                         <div class="d-flex">
                                             <div class="icon h-10 me-3 d-flex mt-1">
-                                                <img src="{{ asset('images/News.png') }}" width="30"
-                                                    height="30" />
+                                                <img src="{{ asset('images/News.png') }}" width="30" height="30" />
                                             </div>
                                             <div>
                                                 <h6
@@ -267,27 +266,47 @@
                         </ul>
                     </li>
                     {{-- yang teliti kalau ngding, jangan ketinggalan tutup tag nya --}}
-                    <li class="nav-item dropdown-translate mx-2">
-                        <a class="nav-link ps-2 d-flex cursor-pointer" id="dropdownMenuDocs"
-                            data-bs-toggle="dropdown">
-                            <img src="{{ asset('images/bendera_indonesia.png') }}" width="30"
-                                height="30" />
-                            Indonesia
+                    <li class="nav-item dropdown dropdown-hover mx-2">
+                        <a class="nav-link dropdown ps-2 d-flex  align-items-center biru" id="dropdownMenuDocs"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{ asset('images/bendera_indonesia.png') }}" width="30" height="30" />
                             <i class="fa fa-caret-down" style="font-size: 15px; padding: 8px"></i>
                         </a>
-                        <ul class="dropdown-menu-translate mt-0 mt-lg-3 p-3 border-radius-lg"
-                            aria-labelledby="dropdownMenutranslate">
+                        <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
+                            aria-labelledby="dropdownMenuDocs dropdown-modif" style="width: 20%; margin-left: -865px; top: 30px;">
                             <div class="d-none d-lg-block">
                                 <li class="nav-item ">
-                                    <a class="dropdown-item-translate border-radius-md" href="javascript:;">
+                                    <a class="dropdown-item py-2 ps-3 border-radius-md"
+                                        href="javascript:;">
                                         <div class="d-flex">
                                             <div class="icon h-10 me-3 d-flex mt-1">
-                                                <img src="langit.png">
+                                                <img src="{{ asset('images/bendera_indonesia.png') }}" width="30"
+                                                    height="30" />
+                                            </div>
+                                            <div>
+                                                <h6
+                                                    class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                                                    Inggris</h6>
                                             </div>
                                         </div>
                                     </a>
                                 </li>
-                            </div>
+                                <li class="nav-item ">
+                                    <a class="dropdown-item py-2 ps-3 border-radius-md"
+                                        href="javascript:;">
+                                        <div class="d-flex">
+                                            <div class="icon h-10 me-3 d-flex mt-1">
+                                                <img src="{{ asset('images/bendera_english.png') }}" width="30"
+                                                    height="30" />
+                                            </div>
+                                            <div>
+                                                <h6
+                                                    class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                                                    Inggris</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
                         </ul>
                     </li>
             </div>
@@ -299,6 +318,7 @@
         </div>
     </nav>
     </div>
+    <div class="rectangle"></div>
     <div>
         @yield('content')
     </div>
