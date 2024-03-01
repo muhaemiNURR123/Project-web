@@ -20,14 +20,23 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- Material Kit CSS -->
+    <!-- dropdown translate -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
     @vite(['resources/css/material-kit.css', 'resources/js/material-kit.js'])
     @vite(['resources/css/misa-custom.css', 'resources/js/custom.js'])
     @vite(['resources/css/style.css'])
     <style>
-        a.biru:hover {
+        a.biru: {
             color: rgba(25, 131, 197, 1);
             cursor: pointer;
+        }
+
+        li.translate: {
+            background-color: #ffffff;
         }
     </style>
 </head>
@@ -52,8 +61,7 @@
         <nav
             class="navbar navbar-expand-lg  blur border-radius-xl to z-index-fixed shadow position-absolute my-5 py-1 start-0 end-0 mx-4">
             <div class="container-fluid">
-                <img src="{{ asset('images/logo_1.png') }}" width="95px" height="65px" />
-                <img src="{{ asset('images/logo_tulisan.png') }}" width="100px" height="70px" />
+                <img src="{{ asset('images/logo_jayabaya.png') }}" width="150px" height="50px" />
                 <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0" id="navigation">
                     <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100 d-flex justify-content-end">
                         <li class="nav-item dropdown dropdown-hover mx-3">
@@ -160,6 +168,8 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
                             </ul>
                         </li>
                         <li class="nav-item dropdown dropdown-hover mx-2">
@@ -194,7 +204,7 @@
                                             <div class="col">
                                                 <a class="dropdown-item py-2 ps-3 border-radius-md"
                                                     href="javascript:;">
-                                                    <div class="d-flex" >
+                                                    <div class="d-flex">
                                                         <div class="icon h-10 me-3 d-flex mt-1">
                                                             <img src="{{ asset('images/careers.png') }}"
                                                                 width="40" height="40" />
@@ -244,7 +254,7 @@
                                             <div class="col">
                                                 <a class="dropdown-item py-2 ps-3 border-radius-md"
                                                     href="javascript:;">
-                                                    <div class="d-flex" >
+                                                    <div class="d-flex">
                                                         <div class="icon h-10 me-3 d-flex mt-1">
                                                             <img src="{{ asset('images/blog.png') }}" width="40"
                                                                 height="40" />
@@ -276,7 +286,7 @@
                                             <div class="col">
                                                 <a class="dropdown-item py-2 ps-3 border-radius-md"
                                                     href="javascript:;">
-                                                    <div class="d-flex" >
+                                                    <div class="d-flex">
                                                         <div class="icon h-10 me-3 d-flex mt-1">
                                                             <img src="{{ asset('images/Publication.png') }}"
                                                                 width="40" height="40" />
@@ -295,16 +305,16 @@
                             </ul>
                         </li>
                         {{-- yang teliti kalau ngding, jangan ketinggalan tutup tag nya --}}
-                        <li class="nav-item dropdown dropdown-hover mx-2">
-                            <a class="nav-link dropdown ps-2 d-flex  align-items-center biru" id="dropdownMenuDocs"
+                        <li class="dropdown dropdown-hover mx-2 translate">
+                            <a class="nav-link dropdown ps-2 d-flex  align-items-center" id="dropdownMenuDocs"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="{{ asset('images/bendera_indonesia.png') }}" width="30"
                                     height="30" />
                                 <i class="fa fa-caret-down" style="font-size: 15px; padding: 8px"></i>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
+                            <ul class="dropdown-menu dropdown-menu-animation mt-0 mt-lg-3 p-3 border-radius-lg"
                                 aria-labelledby="dropdownMenuDocs dropdown-modif"
-                                style="width: 20%; margin-left: -865px; top: 30px; color:rgb(255, 255, 255)">
+                                style="width: 20%; top: 30px; color:rgb(255, 255, 255)">
                                 <div class="d-none d-lg-block">
                                     <li class="nav-item ">
                                         <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
@@ -312,8 +322,6 @@
                                                 <div class="icon h-10 me-3 d-flex mt-1">
                                                     <img src="{{ asset('images/bendera_indonesia.png') }}"
                                                         width="30" height="30" />
-                                                </div>
-                                                <div>
                                                     <h6
                                                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
                                                         Indonesia</h6>
@@ -336,6 +344,7 @@
                                             </div>
                                         </a>
                                     </li>
+                                </div>
                             </ul>
                         </li>
                 </div>
