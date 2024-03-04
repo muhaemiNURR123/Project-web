@@ -72,12 +72,12 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
                                 aria-labelledby="dropdownMenuDocs dropdown-modif"
-                                style="width: 2080%; margin-left: -950px;  top: 40px;">
+                                style="width: 2080%; margin-left: -950px;  top: 20px;">
                                 <div class="container text-center">
                                     <div class="row">
                                         <div class="col">
                                             <div
-                                                style="background: linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); padding: 1.5rem; height: 210px; width: 100%; border-radius: 5px;">
+                                                style="background: linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); padding: 1.5rem; height: 210px; width: 120%; border-radius: 5px; margin-left: -5%">
                                                 <div class="d-flex align-items-center">
                                                     <div class="d-none d-lg-block">
                                                         <li class="nav-item ">
@@ -123,7 +123,7 @@
                                         </div>
                                         <div class="col">
                                             <div
-                                                style="background: linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); padding: 1.5rem; height: 210px; width: 100%; border-radius: 5px;">
+                                                style="background: linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); padding: 1.5rem; height: 210px; width: 100%; border-radius: 5px; margin-left: 15%">
                                                 <div class="d-flex align-items-center">
                                                     <div class="d-none d-lg-block">
                                                         <li class="nav-item ">
@@ -180,7 +180,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
                                 aria-labelledby="dropdownMenuDocs dropdown-modif"
-                                style="width: 1433%; margin-left: -1043px; top: 40px;">
+                                style="width: 1433%; margin-left: -1043px; top: 20px;">
                                 <div
                                     style="background: linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); padding: 1.5rem; height: 50px; width: 100%; border-radius: 5px;">
                                     <div class="container text-center">
@@ -246,7 +246,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
                                 aria-labelledby="dropdownMenuDocs dropdown-modif"
-                                style="width: 1030%; margin-left: -1159px; top: 40px;">
+                                style="width: 1030%; margin-left: -1159px; top: 20px;">
                                 <div
                                     style="background: linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); padding: 1.5rem; height: 50px; width: 100%; border-radius: 5px;">
                                     <div class="container text-center">
@@ -314,16 +314,16 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-animation mt-0 mt-lg-3 p-3 border-radius-lg"
                                 aria-labelledby="dropdownMenuDocs dropdown-modif"
-                                style="width: 20%; top: 30px; color:rgb(255, 255, 255)">
+                                style="width: 250%; top: 20px; background-color:rgb(255, 255, 255); margin-left: -50px">
                                 <div class="d-none d-lg-block">
-                                    <li class="nav-item ">
+                                    <li class="nav-item " style="top: -10px">
                                         <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
                                             <div class="d-flex">
                                                 <div class="icon h-10 me-3 d-flex mt-1">
                                                     <img src="{{ asset('images/bendera_indonesia.png') }}"
-                                                        width="30" height="30" />
+                                                        width="30" height="30"  border-radius=" 10rem;"/>
                                                     <h6
-                                                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
+                                                        class="dropdown-header font-weight-center d-flex justify-content-cente align-items-center " style="color: black">
                                                         Indonesia</h6>
                                                 </div>
                                             </div>
@@ -335,10 +335,8 @@
                                                 <div class="icon h-10 me-3 d-flex mt-1">
                                                     <img src="{{ asset('images/bendera_english.png') }}"
                                                         width="30" height="30" />
-                                                </div>
-                                                <div>
                                                     <h6
-                                                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
+                                                        class="dropdown-header font-weight- d-flex justify-content-cente align-items-center " style="color: black">
                                                         Inggris</h6>
                                                 </div>
                                             </div>
