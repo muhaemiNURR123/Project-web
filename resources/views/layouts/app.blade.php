@@ -23,7 +23,7 @@
     <!-- dropdown translate -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
     @vite(['resources/css/material-kit.css', 'resources/js/material-kit.js'])
@@ -181,59 +181,43 @@
                             <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
                                 aria-labelledby="dropdownMenuDocs dropdown-modif"
                                 style="width: 1433%; margin-left: -1043px; top: 20px;">
-                                <div
-                                    style="background: linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); padding: 1.5rem; height: 50px; width: 100%; border-radius: 5px;">
-                                    <div class="container text-center">
-                                        <div class="row" style="margin-top: -30px">
-                                            <div class="col">
-                                                <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                                    href="javascript:;">
-                                                    <div class="d-flex">
-                                                        <div class="icon h-10 me-3 d-flex mt-1">
-                                                            <img src="{{ asset('images/about_us.png') }}"
-                                                                width="40" height="40" />
-                                                        </div>
-                                                        <div>
-                                                            <h6
-                                                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
-                                                                About Us</h6>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                                    href="javascript:;">
-                                                    <div class="d-flex">
-                                                        <div class="icon h-10 me-3 d-flex mt-1">
-                                                            <img src="{{ asset('images/careers.png') }}"
-                                                                width="40" height="40" />
-                                                        </div>
-                                                        <div>
-                                                            <h6
-                                                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
-                                                                Careers</h6>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                                    href="javascript:;">
-                                                    <div class="d-flex">
-                                                        <div class="icon h-10 me-3 d-flex mt-1">
-                                                            <img src="{{ asset('images/parthners.png') }}"
-                                                                width="40" height="40" />
-                                                        </div>
-                                                        <div>
-                                                            <h6
-                                                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
-                                                                Parthners</h6>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
+                                <div class="row"
+                                    style="width: 100%; height: 50px; margin: 0rem; padding: 1rem 10vw; background:  linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); border-radius: 5px;">
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <a
+                                            class="d-flex align-items-center justify-content-start p-3 nav-menu"
+                                            target="" href="/company" style="margin-top:-25px; margin-left: -30rem">
+                                            <img src="{{ asset('images/about_us.png') }}" alt=""
+                                            width="40" height="40">
+                                            <h6 class="Heading-6"
+                                                style="color: rgb(255, 255, 255); margin: 0px 0px 0px 1rem; font-size: 1.02rem;">
+                                                Tentang Kami
+                                            </h6>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <a
+                                            class="d-flex align-items-center justify-content-start p-3 nav-menu"
+                                            target="" href="/career" style="margin-top:-25px; ">
+                                            <img src="{{ asset('images/careers.png') }}" alt=""
+                                            width="40"height="40;">
+                                            <h6 class="Heading-6"
+                                                style="color: rgb(255, 255, 255); margin: 0px 0px 0px 1rem; font-size: 1.02rem;">
+                                                Karrier
+                                            </h6> 
+                                        </a>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <a
+                                            class="d-flex align-items-center justify-content-start p-3 nav-menu"
+                                            target="" href="/partner" style="margin-top:-25px; margin-left: 30rem">
+                                            <img src="{{ asset('images/parthners.png') }}" alt=""
+                                                width="40"height="40;">
+                                            <h6 class="Heading-6"
+                                                style="color: rgb(255, 255, 255); margin: 0px 0px 0px 1rem; font-size: 1.02rem;">
+                                                Mitra
+                                            </h6>
+                                        </a>
                                     </div>
                                 </div>
                             </ul>
@@ -247,61 +231,45 @@
                             <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
                                 aria-labelledby="dropdownMenuDocs dropdown-modif"
                                 style="width: 1030%; margin-left: -1159px; top: 20px;">
-                                <div
-                                    style="background: linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); padding: 1.5rem; height: 50px; width: 100%; border-radius: 5px;">
-                                    <div class="container text-center">
-                                        <div class="row" style="margin-top: -30px">
-                                            <div class="col">
-                                                <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                                    href="javascript:;">
-                                                    <div class="d-flex">
-                                                        <div class="icon h-10 me-3 d-flex mt-1">
-                                                            <img src="{{ asset('images/blog.png') }}" width="40"
-                                                                height="40" />
-                                                        </div>
-                                                        <div>
-                                                            <h6
-                                                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
-                                                                Blog</h6>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                                    href="javascript:;">
-                                                    <div class="d-flex">
-                                                        <div class="icon h-10 me-3 d-flex mt-1">
-                                                            <img src="{{ asset('images/News.png') }}" width="40"
-                                                                height="40" />
-                                                        </div>
-                                                        <div>
-                                                            <h6
-                                                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
-                                                                News</h6>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col">
-                                                <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                                    href="javascript:;">
-                                                    <div class="d-flex">
-                                                        <div class="icon h-10 me-3 d-flex mt-1">
-                                                            <img src="{{ asset('images/Publication.png') }}"
-                                                                width="40" height="40" />
-                                                        </div>
-                                                        <div>
-                                                            <h6
-                                                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center ">
-                                                                Publications</h6>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="row"
+                                style="width: 100%; height: 50px; margin: 0rem; padding: 1rem 10vw; background:  linear-gradient(rgba(26, 131, 197, 1),rgba(7, 64, 94, 0.83)); border-radius: 5px;">
+                                <div class="col-4 d-flex justify-content-center">
+                                    <a
+                                        class="d-flex align-items-center justify-content-start p-3 nav-menu"
+                                        target="" href="/company" style="margin-top:-25px; margin-left: -30rem">
+                                        <img src="{{ asset('images/blog.png') }}" alt=""
+                                        width="40" height="40">
+                                        <h6 class="Heading-6"
+                                            style="color: rgb(255, 255, 255); margin: 0px 0px 0px 1rem; font-size: 1.02rem;">
+                                            Blog
+                                        </h6>
+                                    </a>
                                 </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <a
+                                        class="d-flex align-items-center justify-content-start p-3 nav-menu"
+                                        target="" href="/career" style="margin-top:-25px; ">
+                                        <img src="{{ asset('images/News.png') }}" alt=""
+                                        width="40"height="40;">
+                                        <h6 class="Heading-6"
+                                            style="color: rgb(255, 255, 255); margin: 0px 0px 0px 1rem; font-size: 1.02rem;">
+                                           Berita
+                                        </h6> 
+                                    </a>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <a
+                                        class="d-flex align-items-center justify-content-start p-3 nav-menu"
+                                        target="" href="/partner" style="margin-top:-25px; margin-left: 30rem">
+                                        <img src="{{ asset('images/Publication.png') }}" alt=""
+                                            width="40"height="40;">
+                                        <h6 class="Heading-6"
+                                            style="color: rgb(255, 255, 255); margin: 0px 0px 0px 1rem; font-size: 1.02rem;">
+                                            Publikasi
+                                        </h6>
+                                    </a>
+                                </div>
+                            </div>
                             </ul>
                         </li>
                         {{-- yang teliti kalau ngding, jangan ketinggalan tutup tag nya --}}
@@ -321,9 +289,9 @@
                                             <div class="d-flex">
                                                 <div class="icon h-10 me-3 d-flex mt-1">
                                                     <img src="{{ asset('images/bendera_indonesia.png') }}"
-                                                        width="30" height="30"  border-radius=" 10rem;"/>
-                                                    <h6
-                                                        class="dropdown-header font-weight-center d-flex justify-content-cente align-items-center " style="color: black">
+                                                        width="30" height="30" border-radius=" 10rem;" />
+                                                    <h6 class="dropdown-header font-weight-center d-flex justify-content-cente align-items-center "
+                                                        style="color: black">
                                                         Indonesia</h6>
                                                 </div>
                                             </div>
@@ -335,8 +303,8 @@
                                                 <div class="icon h-10 me-3 d-flex mt-1">
                                                     <img src="{{ asset('images/bendera_english.png') }}"
                                                         width="30" height="30" />
-                                                    <h6
-                                                        class="dropdown-header font-weight- d-flex justify-content-cente align-items-center " style="color: black">
+                                                    <h6 class="dropdown-header font-weight- d-flex justify-content-cente align-items-center "
+                                                        style="color: black">
                                                         Inggris</h6>
                                                 </div>
                                             </div>
@@ -345,6 +313,7 @@
                                 </div>
                             </ul>
                         </li>
+                    </ul>
                 </div>
             </div>
             {{-- tar tinggal bikin disini buat tombol switch dark mode --}}
