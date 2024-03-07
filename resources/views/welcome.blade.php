@@ -274,7 +274,7 @@
                 <div class="img" style="margin-top: 30px; margin-left: 40px">
                     <img src="{{ asset('images/location.png') }}" width= "30px"; height="25px" />
                 </div>
-                <div class="img" style="margin-left: 40px">
+                <div class="img" style="margin-left: 40px; margin-top: 10px">
                     <img src="{{ asset('images/email.png') }}" width= "30px"; height="25px" />
                 </div>
             </div>
@@ -304,6 +304,11 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Berita</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Publikasi</a></li>
                 </ul>
+            </div>
+            <div class="text-center p-4" style="margin-left: -10px">
+                    <a href="#"> <img src="{{ asset('images/ig.png') }}" width= "15px"; height="15px" /></a>
+                    <a href="#" style="margin-left: 20px"> <img src="{{ asset('images/fb.png') }}" width= "15px"; height="15px"/></a>
+                    <a href="#" style="margin-left: 20px"> <img src="{{ asset('images/x.png') }}" width= "15px"; height="15px"/></a>   
             </div>
             <div class="text-center p-4"
                 style="background-color: rgba(146, 110, 110, 0.05); margin-top: 20px">
