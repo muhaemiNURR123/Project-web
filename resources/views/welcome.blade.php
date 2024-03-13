@@ -64,6 +64,26 @@
                 transform: translateY(0px);
             }
         }
+
+        @media only screen and (max-width: 987px) {
+
+            /* Masukkan gaya CSS khusus untuk ponsel di sini */
+            body {
+                background-color: #ff0000;
+                width: %;
+                height: 30%;
+            }
+        }
+
+        /* Gaya untuk lebar layar yang lebih besar dari 1258.0px x 737.60px (Desktop) */
+        @media only screen and (min-width: 1258.0px) and (min-height: 737.60px) {
+
+            /* Masukkan gaya CSS khusus untuk desktop di sini */
+            body {
+                background-color: #ffffff;
+                /* Contoh warna latar belakang untuk desktop */
+            }
+        }
     </style>
     <div class="min-vh-90 backgroundimage">
         <div class="vh-100 bg-gradient-dark opacity-6">
@@ -204,117 +224,127 @@
     </div>
     </div>
     <h1 style="color: rgba(25, 131, 197, 1); margin: 0px; line-height: 51.69px; font-size: 2.625rem; margin-left: 100px">
-        <i>Berita Terkini</i></h1>
-        <div class="row row-inn" style="margin-left: 100px">
-            <div class="col col-inn">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/jb.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                            <button type="button" class="btn bg-gradient-info mb-0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="That’s the main thing people are controlled by! Thoughts- their perception of themselves!">
-                                Popover on top
-                              </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/jb.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                            <button type="button" class="btn bg-gradient-info mb-0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="That’s the main thing people are controlled by! Thoughts- their perception of themselves!">
-                                Popover on top
-                              </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/jb.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                         <button type="button" class="btn bg-gradient-info mb-0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="That’s the main thing people are controlled by! Thoughts- their perception of themselves!">
-                                Popover on top
-                              </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('images/jb.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                         <button type="button" class="btn bg-gradient-info mb-0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="That’s the main thing people are controlled by! Thoughts- their perception of themselves!">
-                                Popover on top
-                              </button>
-                    </div>
+        <i>Berita Terkini</i>
+    </h1>
+    <div class="row row-inn" style="margin-left: 100px">
+        <div class="col col-inn">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/jb.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <button type="button" class="btn bg-gradient-info mb-0" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top"
+                        data-bs-content="That’s the main thing people are controlled by! Thoughts- their perception of themselves!">
+                        Popover on top
+                    </button>
                 </div>
             </div>
         </div>
-        <div style="width: 100%; height: 9px; background-color: rgba(25, 131, 197, 1); margin-top: 100px"></div>
-        <footer class="row row-cols- row-cols-sm-2 row-cols-md-5 py-1 my-5">
-            <div class="col mb-3">
-                <a class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                    </svg>
-                    <img src="{{ asset('images/logo_jayabaya.png') }}" width="150px" height="50px" />
-                </a>
-                <div class="img" style="margin-top: 30px; margin-left: 40px">
-                    <img src="{{ asset('images/location.png') }}" width= "30px"; height="25px" />
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/jb.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <button type="button" class="btn bg-gradient-info mb-0" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top"
+                        data-bs-content="That’s the main thing people are controlled by! Thoughts- their perception of themselves!">
+                        Popover on top
+                    </button>
                 </div>
-                <div class="img" style="margin-left: 40px; margin-top: 10px">
-                    <img src="{{ asset('images/email.png') }}" width= "30px"; height="25px" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/jb.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <button type="button" class="btn bg-gradient-info mb-0" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top"
+                        data-bs-content="That’s the main thing people are controlled by! Thoughts- their perception of themselves!">
+                        Popover on top
+                    </button>
                 </div>
             </div>
-            <div class="col mb-3" style="margin-left: 10%">
-                <h5>Fitur</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Datamining</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">NLP API</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Anti Hoax</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">JB Insight</a></li>
-                </ul>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/jb.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <button type="button" class="btn bg-gradient-info mb-0" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top"
+                        data-bs-content="That’s the main thing people are controlled by! Thoughts- their perception of themselves!">
+                        Popover on top
+                    </button>
+                </div>
             </div>
+        </div>
+    </div>
+    <div style="width: 100%; height: 9px; background-color: rgba(25, 131, 197, 1); margin-top: 100px"></div>
+    <footer class="row row-cols- row-cols-sm-2 row-cols-md-5 py-1 my-5">
+        <div class="col mb-3">
+            <a class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                </svg>
+                <img src="{{ asset('images/logo_jayabaya.png') }}" width="150px" height="50px" />
+            </a>
+            <div class="img" style="margin-top: 30px; margin-left: 40px">
+                <img src="{{ asset('images/location.png') }}" width= "30px"; height="25px" />
+            </div>
+            <div class="img" style="margin-left: 40px; margin-top: 10px">
+                <img src="{{ asset('images/email.png') }}" width= "30px"; height="25px" />
+            </div>
+        </div>
+        <div class="col mb-3" style="margin-left: 10%">
+            <h5>Fitur</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Datamining</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">NLP API</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Anti Hoax</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">JB Insight</a></li>
+            </ul>
+        </div>
 
-            <div class="col mb-3">
-                <h5>Perusahaan</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tentang Kami</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Karrier</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mitra</a></li>
-                </ul>
-            </div>
+        <div class="col mb-3">
+            <h5>Perusahaan</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tentang Kami</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Karrier</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mitra</a></li>
+            </ul>
+        </div>
 
-            <div class="col mb-3">
-                <h5>Pusat Pembelajaran</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Berita</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Publikasi</a></li>
-                </ul>
-            </div>
-            <div class="text-center p-4" style="margin-left: -10px">
-                    <a href="#"> <img src="{{ asset('images/ig.png') }}" width= "15px"; height="15px" /></a>
-                    <a href="#" style="margin-left: 20px"> <img src="{{ asset('images/fb.png') }}" width= "15px"; height="15px"/></a>
-                    <a href="#" style="margin-left: 20px"> <img src="{{ asset('images/x.png') }}" width= "15px"; height="15px"/></a>   
-            </div>
-            <div class="text-center p-4"
-                style="background-color: rgba(146, 110, 110, 0.05); margin-top: 20px">
-                © 2024 Copyright:
-                <a class="text-reset fw-bold">Jayabaya Engine X</a>
-            </div>
-            </div>
-        </footer>
-    @endsection
+        <div class="col mb-3">
+            <h5>Pusat Pembelajaran</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Berita</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Publikasi</a></li>
+            </ul>
+        </div>
+        <div class="text-center p-4" style="margin-left: -10px">
+            <a href="#"> <img src="{{ asset('images/ig.png') }}" width= "15px"; height="15px" /></a>
+            <a href="#" style="margin-left: 20px"> <img src="{{ asset('images/fb.png') }}" width= "15px";
+                    height="15px" /></a>
+            <a href="#" style="margin-left: 20px"> <img src="{{ asset('images/x.png') }}" width= "15px";
+                    height="15px" /></a>
+        </div>
+        <div class="text-center p-4" style="background-color: rgba(146, 110, 110, 0.05); margin-top: 20px">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold">Jayabaya Engine X</a>
+        </div>
+        </div>
+    </footer>
+@endsection

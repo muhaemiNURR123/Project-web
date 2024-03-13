@@ -5,7 +5,7 @@
     <title>Hello, world!</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- Dark mode -->
     <meta charset="UTF-8">
@@ -60,10 +60,10 @@
         {{-- gedein navbar ubah angka py- --}}
         <nav
             class="navbar navbar-expand-lg  blur border-radius-xl to z-index-fixed shadow position-absolute my-5 py-1 start-0 end-0 mx-4">
-            <div class="container-fluid">
-                <img src="{{ asset('images/logo_jayabaya.png') }}" width="150px" height="50px" />
+            <div class="container-fluid navbar-toggle">
+                <img src="{{ asset('images/logo_jayabaya.png') }}" width="150px" height="50px" margin-left="-30px"/>
                 <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0" id="navigation">
-                    <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100 d-flex justify-content-end">
+                    <ul class="navbar-links navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100 d-flex justify-content-end">
                         <li class="nav-item dropdown dropdown-hover mx-3">
                             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center biru" id="dropdownMenuDocs"
                                 data-bs-toggle="dropdown" aria-expanded="false">
