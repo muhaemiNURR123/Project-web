@@ -1,69 +1,24 @@
-<!doctype html>
-<html lang="en">
+<?php
+// Buat koneksi ke database
+$host = 'localhost';
+$username = 'nama_pengguna';
+$password = 'kata_sandi';
+$database = 'nama_database';
 
-<head>
-    <title>Hello, world!</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta  name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <!-- Dark mode -->
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <!-- Material Kit CSS -->
-    <!-- dropdown translate -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+$koneksi = new mysqli($host, $username, $password, $database);
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+// Periksa koneksi
+if ($koneksi->connect_error) {
+    die("Koneksi gagal: " . $koneksi->connect_error);
+}
 
-    @vite(['resources/css/material-kit.css', 'resources/js/material-kit.js'])
-    @vite(['resources/css/misa-custom.css', 'resources/js/custom.js'])
-    @vite(['resources/css/style.css'])
-    <style>
-        a.biru: {
-            color: rgba(25, 131, 197, 1);
-            cursor: pointer;
-        }
+// Query untuk mengambil data dari database (contoh: daftar pengguna)
+$sql = "SELECT * FROM pengguna";
+$result = $koneksi->query($sql);
 
-        li.translate: {
-            background-color: #ffffff;
-        }
-    </style>
-</head>
+?>
 
-<body>
-    <!-- Navbar -->
-    <div class="position-sticky z-index-sticky to">
-        {{-- <div class="row">
-            <div class="col-12">
-                
-                <!-- End Navbar -->
-                <main>
-                    <!-- Jangan di hapus, buat conn -->
-                    <p type="button" class="hide" id="clearLocalStorage">
-                </main>
-                <!-- partial -->
-                <script src="./script.js"></script>
-
-            </div>
-        </div> --}}
-        {{-- gedein navbar ubah angka py- --}}
-        <nav
-            class="navbar navbar-expand-lg  blur border-radius-xl to z-index-fixed shadow position-absolute my-5 py-1 start-0 end-0 mx-4">
-            <div class="container-fluid navbar-toggle">
-                <img src="{{ asset('images/logo_jayabaya.png') }}" width="150px" height="50px" margin-left="-30px"/>
-                <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0" id="navigation">
-                    <ul class="navbar-links navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100 d-flex justify-content-end">
+<ul class="navbar-links navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100 d-flex justify-content-end">
                         <li class="nav-item dropdown dropdown-hover mx-3">
                             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center biru" id="dropdownMenuDocs"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -314,25 +269,18 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
-            </div>
-            {{-- tar tinggal bikin disini buat tombol switch dark mode --}}
-            <div class="dark-mode-switch" style="margin-right: 10px">
-                <input type="checkbox" class="material-symbols-rounded" id="theme-toggle" />
-                <label for="theme-toggle">Dark mode</label>
-            </div>
-        </nav>
-    </div>
-    <div class="rectangle"></div>
-    <div>
-        @yield('content')
-    </div>
-    <script>
-        $(document).ready(function() {
-          $('#MyModal').modal('show');
-        });
-      </script>
-  
-</body>
-
-</html>
+            <ul class="dropdown-menu">
+            <?php
+            // Iterasi data dan tampilkan di dropdown menu
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<li><a href='#'>" . $row["username"] . "</a></li>";
+                }
+            } else {
+                echo "0 results";
+            }
+            ?>
+        </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+</ul>

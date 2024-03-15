@@ -1,7 +1,49 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="MyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Langganan Notifikasi Blog</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="pass"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pass" required>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary">Langganan</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <style>
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
         .content-marker {
             width: 1rem !important;
             height: 80px;
@@ -64,26 +106,6 @@
                 transform: translateY(0px);
             }
         }
-
-        @media only screen and (max-width: 987px) {
-
-            /* Masukkan gaya CSS khusus untuk ponsel di sini */
-            body {
-                background-color: #ff0000;
-                width: %;
-                height: 30%;
-            }
-        }
-
-        /* Gaya untuk lebar layar yang lebih besar dari 1258.0px x 737.60px (Desktop) */
-        @media only screen and (min-width: 1258.0px) and (min-height: 737.60px) {
-
-            /* Masukkan gaya CSS khusus untuk desktop di sini */
-            body {
-                background-color: #ffffff;
-                /* Contoh warna latar belakang untuk desktop */
-            }
-        }
     </style>
     <div class="min-vh-90 backgroundimage">
         <div class="vh-100 bg-gradient-dark opacity-6">
@@ -91,7 +113,8 @@
                 <div class="row py-6">
                     <div class="col ">
                         <div class="py-9" style="margin-bottom: 1.7em;">
-                            <h4 class="Heading-1" style="font-size: 3rem; color: rgb(255, 255, 255); width: 85%">Sebuah Mesin
+                            <h4 class="Heading-1" style="font-size: 3rem; color: rgb(255, 255, 255); width: 85%">Sebuah
+                                Mesin
                                 IT yang memiliki kemampuan teknologi
                                 <span style="color: rgba(248, 211, 37, 1)">Big Data</span>
                                 yang proses analisis dan
@@ -99,8 +122,8 @@
                                     internet.</span>
                                 <img src="{{ asset('images/Line1.png') }}" width="85%" height="10px" />
                             </h4>
-                            <button class="btn" style="background-color: rgba(25, 131, 197, 1); color: white; ">Hubungi
-                                Kami</button>
+                            <button class="btn"
+                                style="background-color: rgba(25, 131, 197, 1); color: white; ">Login</button>
                         </div>
                     </div>
                 </div>
